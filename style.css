@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  background-color: aliceblue;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+#hero {
+  width: 50px;
+  height: 100px;
+  background-color: #333333;
+  bottom: calc(50%);
+  left: 10px;
+  position: absolute;
+  transition: height 0.1s ease-in-out;
+  /* transition: bottom 1s ease-in-out; */
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+#hero.kneeldown {
+  height: 50px;
+  /* top: calc(50% - 50px); */
+}
+
+#hero.jump {
+  animation-name: bounce;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+.ground {
+  width: 100vw;
+  height: 10px;
+  top: 50%;
+  background-color: brown;
+  position: absolute;
+}
+
+.box {
+  width: 55px;
+  height: 55px;
+  background-color: darkblue;
+  position: absolute;
+  top: calc(50% - 55px);
+  left: calc(50% - 55px);
+}
+
+.msgBox {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.game-title {
+    font-family: 'Cinzel Decorative', sans-serif;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "carnivalkid",
+  "version": "1.0.0",
+  "description": "2d sidescroller game\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauravbora2008/carnivalkid.git"
+  },
+  "author": "Gaurav Bora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gauravbora2008/carnivalkid/issues"
+  },
+  "homepage": "https://github.com/gauravbora2008/carnivalkid#readme"
+}
